@@ -17,6 +17,11 @@ pipeline {
                 bat "python startec2.py"
             }
         }
+        stage('ec2 stop') {
+            steps {
+                bat "python stopec2.py"
+            }
+        }
     }
 }
 
