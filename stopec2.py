@@ -1,3 +1,8 @@
+import time
+
+
+time.sleep(300)
+
 import boto3
 
 aws_access_key_id = 'ASIAR5BNGUZRTE4E2TME'
