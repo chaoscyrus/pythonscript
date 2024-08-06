@@ -1,7 +1,7 @@
 import time
 
 
-time.sleep(300)
+time.sleep(200)
 
 import boto3
 
