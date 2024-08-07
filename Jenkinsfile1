@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                bat "echo helloworld"
+            }
+        }
+        stage('Run Docker Compose') {
+            steps {
+                script {
+                    // Ensure Docker is installed and running
+                    sh 'docker-compose -f path/to/your-docker-compose.yml up -d'
+                }
+            }
+        }
+    }
+}
