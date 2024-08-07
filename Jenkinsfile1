@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Ensure Docker is installed and running
-                    sh 'docker-compose -f .github/workflows/build.yml up -d'
+                    bat 'docker-compose -f .github/workflows/build.yml up -d'
                 }
             }
         }
